@@ -1,22 +1,19 @@
-# parse-json-object
-![dependencies](https://img.shields.io/david/bconnorwhite/parse-json-object)
-![typescript](https://img.shields.io/github/languages/top/bconnorwhite/parse-json-object)
-![npm](https://img.shields.io/npm/v/parse-json-object)
+# stringify-json-object
+![dependencies](https://img.shields.io/david/bconnorwhite/stringify-json-object)
+![typescript](https://img.shields.io/github/languages/top/bconnorwhite/stringify-json-object)
+![npm](https://img.shields.io/npm/v/stringify-json-object)
 
-Parse a typed JSON object.
-
-- Returns undefined if unable to parse
-- Returns typed JSON object if successful
+Stringify and format a JSON object.
 
 ```
-yarn add parse-json-object
+yarn add stringify-json-object
 ```
 
 ## API
 ```ts
-import parse, { isJSONObject, JSONObject, JSONValue, JSONArray } from "parse-json-object";
+import stringify, { isJSONObject, JSONObject, JSONValue, JSONArray } from "stringify-json-object";
 
-parse(json?: string) => JSONObject | undefined;
+stringify(json?: string, pretty = true) => string;
 
 isJSONObject(json?: JSONValue) => boolean;
 
