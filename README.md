@@ -13,7 +13,7 @@ yarn add stringify-json-object
 ```ts
 import stringify, { isJSONObject, JSONObject, JSONValue, JSONArray } from "stringify-json-object";
 
-stringify(json?: string, pretty = true) => string;
+stringify(json?: JSONValue, pretty = true) => string;
 
 isJSONObject(json?: JSONValue) => boolean;
 

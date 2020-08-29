@@ -7,10 +7,14 @@ export {
   JSONArray
 }
 
-export default function stringify(json: JSONObject = {}, pretty = true) {
-  if(pretty) {
-    return JSON.stringify(json, null, 2);
+export default function stringify(json?: JSONValue, pretty = true) {
+  if(json === undefined) {
+    return "";
   } else {
-    return JSON.stringify(json);
+    if(pretty) {
+      return JSON.stringify(json, null, 2);
+    } else {
+      return JSON.stringify(json);
+    }
   }
 }
