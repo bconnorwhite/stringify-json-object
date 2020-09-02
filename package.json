@@ -23,10 +23,10 @@
     "test": "yarn jest"
   },
   "dependencies": {
-    "@bconnorwhite/json-types": "^1.0.2"
+    "@bconnorwhite/json-types": "^1.0.3"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.5",
+    "@bconnorwhite/bob": "^1.9.6",
     "jest": "^26.4.2"
   }
 }
