@@ -1,6 +1,6 @@
 {
   "name": "stringify-json-object",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stringify and format a JSON object.",
   "author": "Connor White",
   "license": "MIT",
