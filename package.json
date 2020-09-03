@@ -12,6 +12,7 @@
     "typed",
     "object"
   ],
+  "homepage": "https://connorwhite.org/github/stringify-json-object",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/stringify-json-object.git"
