@@ -2,8 +2,13 @@
   "name": "stringify-json-object",
   "version": "1.0.4",
   "description": "Stringify and format a JSON object.",
-  "author": "Connor White",
   "license": "MIT",
+  "author": "Connor White",
+  "homepage": "https://connorwhite.org/github/stringify-json-object",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/stringify-json-object.git"
+  },
   "keywords": [
     "json",
     "stringify",
@@ -12,23 +17,21 @@
     "typed",
     "object"
   ],
-  "homepage": "https://connorwhite.org/github/stringify-json-object",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bconnorwhite/stringify-json-object.git"
-  },
+  "files": [
+    "build"
+  ],
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build && yarn test",
     "postversion": "git push",
+    "prepublishOnly": "yarn build && yarn test",
     "test": "yarn jest"
   },
   "dependencies": {
     "@bconnorwhite/json-types": "^1.0.5"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.7",
+    "@bconnorwhite/bob": "^2.1.0",
     "jest": "^26.4.2"
   }
 }
