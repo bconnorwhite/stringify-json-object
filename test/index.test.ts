@@ -1,4 +1,5 @@
-const stringify = require("../build/index.js").default;
+import { test, expect } from "@jest/globals";
+import stringify from "../source";
 
 test("json object pretty", () => {
   const string = stringify({ a: 1, b: 2 });
@@ -11,12 +12,12 @@ test("json object no pretty", () => {
 });
 
 test("json array pretty", () => {
-  const string = stringify([1,2]);
+  const string = stringify([1, 2]);
   expect(string).toBe("[\n  1,\n  2\n]");
 });
 
 test("json array no pretty", () => {
-  const string = stringify([1,2], false);
+  const string = stringify([1, 2], false);
   expect(string).toBe("[1,2]");
 });
 

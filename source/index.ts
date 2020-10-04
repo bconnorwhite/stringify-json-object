@@ -10,11 +10,9 @@ export {
 export default function stringify(json?: JSONValue, pretty = true) {
   if(json === undefined) {
     return "";
+  } else if(pretty) {
+    return JSON.stringify(json, null, 2);
   } else {
-    if(pretty) {
-      return JSON.stringify(json, null, 2);
-    } else {
-      return JSON.stringify(json);
-    }
+    return JSON.stringify(json);
   }
 }
