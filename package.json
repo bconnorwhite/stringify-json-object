@@ -31,7 +31,7 @@
     "test": "bob test"
   },
   "dependencies": {
-    "json-types": "^1.0.2"
+    "types-json": "^1.2.2"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.9.2"

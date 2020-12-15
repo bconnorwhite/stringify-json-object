@@ -1,4 +1,4 @@
-import { isJSONObject, JSONObject, JSONValue, JSONArray } from "@bconnorwhite/json-types";
+import { isJSONObject, JSONObject, JSONValue, JSONArray } from "types-json";
 
 export {
   isJSONObject,
