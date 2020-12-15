@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/bconnorwhite/stringify-json-object/compare/v1.0.6...v1.0.7) (2020-12-15)
+
+
+### Bug Fixes
+
+* fixed dependency issue ([52f0a24](https://github.com/bconnorwhite/stringify-json-object/commit/52f0a248c61c335d73f85484fe7eb0f1c6197d94))
+
+
+
 ## [1.0.6](https://github.com/bconnorwhite/stringify-json-object/compare/v1.0.5...v1.0.6) (2020-10-04)
 
 
