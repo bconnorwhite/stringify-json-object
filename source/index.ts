@@ -1,11 +1,5 @@
-import { isJSONObject, JSONObject, JSONValue, JSONArray } from "types-json";
-
-export {
-  isJSONObject,
-  JSONObject,
-  JSONValue,
-  JSONArray
-}
+import { isJSONObject } from "types-json";
+import type { JSONValue, JSONObject, JSONArray } from "types-json";
 
 export default function stringify(json?: JSONValue, pretty = true) {
   if(json === undefined) {
@@ -15,4 +9,14 @@ export default function stringify(json?: JSONValue, pretty = true) {
   } else {
     return JSON.stringify(json);
   }
+}
+
+export {
+  isJSONObject
+}
+
+export type {
+  JSONObject,
+  JSONValue,
+  JSONArray
 }

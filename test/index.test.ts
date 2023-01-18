@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import stringify from "../source";
+import stringify from "../source/index.js";
 
 test("json object pretty", () => {
   const string = stringify({ a: 1, b: 2 });
