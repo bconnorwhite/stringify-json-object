@@ -1,6 +1,6 @@
 {
   "name": "stringify-json-object",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Stringify and format a JSON object",
   "license": "MIT",
   "private": false,
