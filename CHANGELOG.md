@@ -1,3 +1,7 @@
+# [3.0.0](https://github.com/bconnorwhite/stringify-json-object/compare/v2.0.0...v3.0.0) (2023-01-24)
+
+
+
 # [2.0.0](https://github.com/bconnorwhite/stringify-json-object/compare/v1.0.7...v2.0.0) (2023-01-18)
 
 
