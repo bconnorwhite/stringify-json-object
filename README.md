@@ -46,24 +46,37 @@ pnpm add stringify-json-object
 ```
 
 ## Usage
+
+The `stringify` function works like `JSON.stringify`:
+
 ```ts
-import stringify, { isJSONObject, JSONObject, JSONValue, JSONArray } from "stringify-json-object";
+import stringify from "stringify-json-object";
 
-stringify(json?: JSONValue, pretty = true) => string;
-
-isJSONObject(json?: JSONValue) => boolean;
+stringify(true); // 'true'
+stringify(1); // '1'
+stringify("foo"); // '"foo"'
+stringify({ foo: "bar" }); // '{"foo":"bar"}'
+stringify({ foo: "bar", missing: undefined }); // '{"foo":"bar"}'
 
 ```
 
-### Types
+The `stringify` function also accepts an options argument, to easily format the output:
+
 ```ts
-type JSONObject = {
-  [key in string]?: JSONValue
-};
+import stringify from "stringify-json-object";
 
-type JSONValue = string | number | boolean | null | JSONObject | JSONArray;
+stringify({ foo: "bar" }, { pretty: true }); // '{\n  "foo": "bar"\n}"
+```
 
-interface JSONArray extends Array<JSONValue> {};
+Additionally, primitives resolve to typed string literals:
+```ts
+import stringify from "stringify-json-object";
+
+stringify(true); // "true"
+stringify(1); // "1"
+stringify("foo"); // "\"foo\""
+stringify({ foo: "bar" }); // string
+
 ```
 
 <!--BEGIN FOOTER-->
@@ -74,13 +87,11 @@ interface JSONArray extends Array<JSONValue> {};
 
 - [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
 
-
 <br />
 
 <h3>Dev Dependencies</h3>
 
 - [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
-
 
 <br />
 
@@ -88,6 +99,8 @@ interface JSONArray extends Array<JSONValue> {};
 
 [MIT](https://opensource.org/licenses/MIT)
 <!--END FOOTER-->
+
+<br />
 
 ## Related Packages
 
